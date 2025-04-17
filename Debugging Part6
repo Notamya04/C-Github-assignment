@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    int number = 10;
+
+    // Error 1: Assignment inside if condition instead of comparison
+    // In the original code, we have 'if(number = 20)' which is an assignment, not a comparison.
+    // Corrected to 'if(number == 20)' to compare values instead of assigning.
+    if (number == 20) { // Corrected the assignment (=) to comparison (==)
+        cout << "Number is 20" << endl;
+    } else {
+        cout << "Number is not 20" << endl;
+    }
+
+    // Error 2: Incorrect semicolon at the end of the for loop
+    // The semicolon after the 'for' loop creates an empty loop body.
+    // It should be removed so that the statement inside the loop executes properly.
+    // Corrected to remove the semicolon after the for loop condition.
+    for (int i = 0; i <= 5; i++) { // Removed the extraneous semicolon
+        cout << i << endl;  // This now prints the values of i from 0 to 5
+    }
+
+    return 0;
+}
