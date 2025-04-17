@@ -25,3 +25,29 @@ int main() {
 
     return 0;
 }
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    // User input variables
+    string name;
+    int age;
+    double favoriteNumber;
+
+    // User input
+    cout << "Enter your name: ";
+    getline(cin, name);
+
+    cout << "Enter your age: ";
+    cin >> age;
+
+    cout << "Enter your favorite number: ";
+    cin >> favoriteNumber;
+
+    
+
+   
+
+    return 0;
+}
