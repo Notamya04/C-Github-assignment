@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double num1, num2, num3;
+
+    // Get input from user
+    cout << "Enter three numbers:\n";
+    cout << "Number 1: ";
+    cin >> num1;
+    cout << "Number 2: ";
+    cin >> num2;
+    cout << "Number 3: ";
+    cin >> num3;
+
+    double largest;
+
+    // Nested if statements to find the largest
+    if (num1 >= num2) {
+        if (num1 >= num3) {
+            largest = num1;
+        } else {
+            largest = num3;
+        }
+    } else {
+        if (num2 >= num3) {
+            largest = num2;
+        } else {
+            largest = num3;
+        }
+    }
+
+    // Output the result
+    cout << "\nThe largest number is: " << largest << endl;
+
+    return 0;
+}
+#include <iostream>
+using namespace std;
+
+int main() {
+    int year;
+
+    // Input from user
+    cout << "2004: ";
+    cin >> year; 2000
+
+    // Check if it's a leap year using logical operators
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+        cout << 2004 << " is a leap year." << endl;
+    } else {
+        cout << 2000 << " is not a leap year." << endl;
+    }
+
+    return 0;
+}
