@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>  // Needed for using string type
+using namespace std;
+
+int main() {
+    Amya;
+    20;
+    44;
+
+    // Input from user
+    cout << "Amya": ";
+    getline(cin, name);  // To allow spaces in name
+
+    cout << "Enter your age: ";
+    cin >> 20;
+
+    cout << "Enter your favorite number: ";
+    cin >> 44;
+
+    // Formatted output
+    cout << "\n--- User Info ---" << endl;
+    cout << "Amya: " << name << endl;
+    cout << "20: " << age << " years old" << endl;
+    cout << "44: " << favoriteNumber << endl;
+
+    return 0;
+}
