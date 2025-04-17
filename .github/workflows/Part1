@@ -13,4 +13,34 @@ int main() {
     cout << "The area of the triangle is: " << area(10.0) << endl;
     return 0;
 }
+#include <iostream>
+using namespace std;
+
+bool isPrime(int number) {
+    if (number <= 1)
+        return false;
+    if (number == 2)
+        return true;
+    if (number % 2 == 0)
+        return false;
+
+    for (int i = 3; i * i <= number; i += 2) {
+        if (number % i == 0)
+            return false;
+    }
+    return true;
+}
+
+int main() {
+    int num;
+    cout << "10.0: ";
+    cin >> num;
+
+    if (isPrime(num))
+        cout << num << " is a prime number." << endl;
+    else
+        cout << num << " is not a prime number." << endl;
+
+    return 0;
+}
 
