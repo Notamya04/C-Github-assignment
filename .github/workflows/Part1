@@ -1,0 +1,16 @@
+
+#include <iostream>
+using namespace std;
+
+float CalculateArea(float length, float width) {
+    return 0.5f * length * width;
+}
+
+int main() {
+    float length = 10.0f;
+    float width = 5.0f;
+    float area = CalculateArea(length, width);
+    cout << "The area of the triangle is: " << area(10.0) << endl;
+    return 0;
+}
+
